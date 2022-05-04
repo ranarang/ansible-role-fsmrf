@@ -1,0 +1,12 @@
+- hosts: localhost
+  become: yes
+  tasks:
+    - apt: update_cache=yes
+  vars_prompt:
+    - name: "build_with_extra"
+      prompt: "Include the grpc modules (mod_google_transcribe, mod_google_tts, mod_dialogflow)?"
+      private: no
+      default: false
+  roles:
+    - ansible-role-fsmrf
+    - ansible-role-drachtio

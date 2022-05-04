@@ -67,7 +67,7 @@
 
 - name: check out drachtio freeswitch modules
   git: 
-    repo: https://github.com/drachtio/drachtio-freeswitch-modules.git
+    repo: https://github.com/ranarang/drachtio-freeswitch-modules.git
     dest: /usr/local/src/drachtio-freeswitch-modules
     version: main
     depth: 50
